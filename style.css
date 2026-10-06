@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container */
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* ================= HEADER ================= */
+
+.header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: white;
+    z-index: 1000;
+}
+
+/* Logo */
+.logo h1 {
+    font-size: 28px;
+}
+
+/* Navigation Links */
+.links {
+    display: flex;
+    gap: 25px;
+}
+
+.links a {
+    color: #000;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+.links a:hover {
+    color: gray;
+}
+
+/* ================= HERO ================= */
+
+.hero {
+    min-height: 50vh;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)
+        ),
+        url("./pros/contactbg.png");
+
+    background-size: cover;
+    background-position: center;
+}
+
+/* Hero Text */
+.hero-text {
+    color: white;
+    margin: 40px;
+}
+
+.hero-text p {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.hero-text h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.hero-text h2 {
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+/* ================= BUTTON ================= */
+
+button {
+    margin-top: 20px;
+    padding: 12px 20px;
+
+    background-color: navy;
+    color: white;
+
+    border: none;
+    border-radius: 10px;
+
+    cursor: pointer;
+    font-size: 16px;
+
+    transition: 0.3s;
+}
+button:hover{
+    background-color: blue;
+    color: black;
+}
+
+button:hover {
+    background-color: blue;
+}
+
+/* ================= SKILLS ================= */
+
+.footer {
+    background-color: silver;
+    text-align: center;
+    padding: 30px;
+}
+
+.footer h1 {
+    margin-bottom: 20px;
+}
+
+/* Skills Container */
+.langs {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Skill Box */
+.lang {
+    width: 120px;
+    height: 120px;
+
+    border: 1px solid black;
+    border-radius: 10px;
+
+    margin: 10px;
+    padding: 10px;
+
+    /* الصورة فوق الكلام */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: white;
+
+    transition: 0.3s;
+}
+
+/* Skill Image */
+.lang img {
+    width: 55px;
+    height: 55px;
+
+    object-fit: contain;
+    margin-bottom: 10px;
+}
+
+/* Skill Name */
+.lang h3 {
+    margin: 0;
+    padding: 0;
+}
+
+/* Skill Hover */
+.lang:hover {
+    transform: translateY(-5px);
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 768px) {
+
+    .header {
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero {
+        min-height: 60vh;
+    }
+
+    .hero-text {
+        margin: 25px;
+    }
+
+    .hero-text h1 {
+        font-size: 38px;
+    }
+
+    .hero-text h2 {
+        font-size: 24px;
+    }
+
+    .hero-text p {
+        font-size: 18px;
+    }
+
+    .lang {
+        width: 100px;
+        height: 110px;
+    }
+
+    .lang img {
+        width: 50px;
+        height: 50px;
+    }
+}
